@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VcfToCsvConverterMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description=""
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Convert your contacts VCF file to a CSV"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="This simple application helps you convert your contacts vcf file into a CSV without any constraints. You can use it offline so privacy is guaranteed. The code is available as open source so feel free to confirm your privacy as well as suggest improvements."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description=""
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="ConvertBtn"
+                Text="Convert"
+                SemanticProperties.Hint="Exports to a CSV file the contents of the selected VCF file."
+                Clicked="OnConvertClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
